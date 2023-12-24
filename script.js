@@ -1,5 +1,3 @@
-// Adicione este link no cabeçalho do seu HTML:
-// <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
 function gerarCartela() {
     Swal.fire({
@@ -35,7 +33,6 @@ function gerarCartela() {
     });
 }
 
-// Gerar 500 tipos diferentes de cartelas
 for (let i = 0; i < 500; i++) {
     gerarCartela();
 }
@@ -55,7 +52,6 @@ function marcarNumero(event) {
     const bingoNumber = event.target;
     bingoNumber.classList.toggle("marked");
 
-    // Verificar se todos os números estão marcados
     const markedNumbers = document.querySelectorAll('.marked');
     if (markedNumbers.length === 25) {
         exibirMensagemVitoria();
@@ -68,5 +64,4 @@ function exibirMensagemVitoria() {
     message.style.display = "block";
 }
 
-// Chamar a função para gerar a cartela inicial
 gerarCartela();

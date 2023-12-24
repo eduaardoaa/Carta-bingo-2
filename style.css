@@ -1,0 +1,59 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 20px;
+    background-color: lightblue;
+}
+
+.bingo-card {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+    max-width: 400px; /* Aumentei um pouco a largura da tabela */
+    margin: 20px auto;
+}
+
+.bingo-number {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px; /* Aumentei o tamanho do quadrado dos números */
+    height: 50px; /* Aumentei o tamanho do quadrado dos números */
+    border: 2px solid #333;
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 5px;
+}
+
+.marked {
+    background-color: #4CAF50;
+    color: #fff;
+}
+
+#new-card-button {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#message {
+    margin-top: 20px;
+    font-size: 18px;
+    color: green;
+    display: none;
+}
+
+/* Adições para dispositivos móveis */
+@media (max-width: 480px) {
+    .bingo-card {
+        max-width: 100%;
+    }
+
+    .bingo-number {
+        width: 60px; /* Aumente o tamanho do quadrado dos números para dispositivos móveis */
+        height: 60px; /* Aumente o tamanho do quadrado dos números para dispositivos móveis */
+        font-size: 24px; /* Aumente o tamanho dos números para dispositivos móveis */
+    }
+}

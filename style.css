@@ -9,7 +9,7 @@ body {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     gap: 10px;
-    max-width: 400px; /* Aumentei um pouco a largura da tabela */
+    max-width: 400px;
     margin: 20px auto;
 }
 
@@ -17,8 +17,8 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 50px; /* Aumentei o tamanho do quadrado dos números */
-    height: 50px; /* Aumentei o tamanho do quadrado dos números */
+    width: 50px; 
+    height: 50px;
     border: 2px solid #333;
     cursor: pointer;
     font-size: 18px;
@@ -45,15 +45,14 @@ body {
     display: none;
 }
 
-/* Adições para dispositivos móveis */
 @media (max-width: 480px) {
     .bingo-card {
         max-width: 100%;
     }
 
     .bingo-number {
-        width: 60px; /* Aumente o tamanho do quadrado dos números para dispositivos móveis */
-        height: 60px; /* Aumente o tamanho do quadrado dos números para dispositivos móveis */
-        font-size: 24px; /* Aumente o tamanho dos números para dispositivos móveis */
+        width: 60px;
+        height: 60px;
+        font-size: 24px; 
     }
 }

@@ -44,7 +44,7 @@ function gerarNumeros() {
     const numeros = new Set();
 
     while (numeros.size < 25) {
-        const numero = Math.floor(Math.random() * 60) + 1;
+        const numero = Math.floor(Math.random() * 99) + 1;
         numeros.add(numero);
     }
 
